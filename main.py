@@ -36,6 +36,7 @@ while game_is_on:
         # game_is_on = False
         # scoreboard.game_over()
         scoreboard.reset()
+        snake.reset()
 
 
     # Detect collision with tail
@@ -46,6 +47,7 @@ while game_is_on:
             pass
         elif segment == snake.head:
             scoreboard.reset()
+            snake.reset()
     
     # for segment in snake.segments:
     #     if segment == snake.head:
